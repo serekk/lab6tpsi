@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pierwszy projekt springowy</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+
+<h1>Co chciałbyś policzyć?</h1>
+<form action="/calc" method="post">
+    x: <input type="number" name="x" /> <br>
+    y: <input type="number" name="y"> <br>
+
+    <p>Wybierz operację:</p>
+    <input type="radio" id="add" name="operator" value="add">
+    <label for="add">Dodaj</label><br>
+    <input type="radio" id="subtract" name="operator" value="subtract">
+    <label for="subtract">Odejmij</label><br>
+    <input type="radio" id="multiply" name="operator" value="multiply">
+    <label for="multiply">Pomnóż</label><br>
+    <input type="submit" value="policz" />
+</form>
+
+</body>
+</html>
